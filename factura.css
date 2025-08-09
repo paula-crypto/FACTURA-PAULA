@@ -85,6 +85,7 @@
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 5px;
+            color: #fff;
     }
 
      .invoice-label p span {
@@ -382,6 +383,7 @@
     padding: 0;
  }
    }
+
 
 
 
