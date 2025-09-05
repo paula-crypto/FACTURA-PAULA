@@ -68,13 +68,26 @@
         
     }
 
+    .invoice-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .invoice-number {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-around;
+    }
+
     .invoice-label h1 {
         color: #f7931e;
         font-size: 32px;
         margin-bottom: 10px;
         margin-top: 20px;
-        padding-right: 60px;
+        text-align: center;
     
+        letter-spacing: 5px;
     }
 
     .invoice-label p {
@@ -293,7 +306,7 @@
     }
 
   
-  @media (max-width: 650px) {
+  @media (max-width: 750px) {
   .invoice-header {
     background-color: #000 !important;      
     background-image: none !important;      
@@ -322,7 +335,7 @@
   }
 }
 
-  @media(max-width: 400px) {
+  @media(max-width: 600px) {
    .invoice-header{
     display: grid;
     grid-template-columns:  1fr;
@@ -335,6 +348,7 @@
   .logo{
     padding: 0;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   .invoice-label h1{
     align-items: center;
@@ -383,8 +397,30 @@
     padding: 0;
  }
    }
+@media (max-width: 538px) {
+    .invoice-to-payment {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 
+.invoice-to h3{
+    text-align: start;
+      
+}
 
+.invoice-to{
+       position: relative;
+    left: 10px;
+}
+   
+.payment-method {
+    position: relative;
+    right: 10px;
+    text-align: start;
+}
+    
 
 
 
